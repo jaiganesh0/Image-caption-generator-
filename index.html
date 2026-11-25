@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Image Caption Generator</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>Image caption generator</h1><p class="sub">Upload a photo, pick a tone and get caption ideas and hashtags.</p>
+<div class="card grid"><label>Photo<input id="file" type="file" accept="image/*"></label><label>Tone<select id="tone"><option>Casual</option><option>Professional</option><option>Funny</option><option>Aesthetic</option></select></label>
+<label>Keyword (optional)<input id="kw" placeholder="e.g. wedding, sunrise, team"></label></div>
+<section id="out" class="card" hidden><img id="pic" alt="Your uploaded photo"><p id="facts" class="note"></p><h2>Caption ideas</h2><ul id="caps"></ul><p id="tags" class="tags"></p></section>
+<p class="note">Captions are built from what the browser can measure in your photo (colours, brightness, shape) plus your keyword and tone. It does not use an AI vision model, so it cannot recognise objects or people.</p>
+</main><script src="script.js"></script></body></html>
